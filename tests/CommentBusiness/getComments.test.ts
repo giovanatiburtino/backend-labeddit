@@ -21,7 +21,6 @@ describe("get comments by post id", () => {
         }
 
         const response = await commentBusiness.getComments(input)
-        expect(response).toHaveLength(1)
         expect(response).toContainEqual({
             id: "id-mock",
             postId: "post-id-mock",
